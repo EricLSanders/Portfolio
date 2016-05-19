@@ -39,12 +39,12 @@ hr {
     margin: 0px;
     margin-right: 100px;
 }
-li {
+nav li {
     list-style-type: none;
     float: left;
     margin-left: 46px; 
 }
-li:nth-child(1){
+nav li:nth-child(1){
     margin-left: 0px;
 }
 a[href^="#"]{
@@ -59,7 +59,7 @@ a[href^="#"]{
     text-align: center;
     height: 100%;
 }
-#top .content{
+#home-content{
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -77,7 +77,35 @@ a[href^="#"]{
 }
 a[href="#top"] {
     margin-left:100px;
+    margin-right:50px;
+    vertical-align: middle;
+}
+a img{
+   vertical-align:middle;
+}
+a, a:visited{
+     color: white;
+     /*vertical-align: middle;*/
+}
+#experience .content h3{
+    margin-bottom: 0px;
+}
+#projects .content h2 {
+    margin-bottom: 0px;
+    display: inline;
+    vertical-align: middle;
+    margin-right: 10px;
+} 
+#projects .content h4 {
+    margin-top: 0px;
+} 
+.content {
+    margin-left:40px;
+    margin-top:25px;
 }
 #connect {
     margin-bottom: 40px;
+}
+#connect img{
+    margin-right: 50px;
 }
