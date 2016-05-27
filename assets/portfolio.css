@@ -1,3 +1,29 @@
+
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    background: #19c589;
+    /*text-align: center;*/
+/*    padding: 0;*/
+    display: none;
+    float: right;
+    margin-right: 100px;
+    border: red 3px solid;
+    padding: 10px 0;
+    vertical-align: center;
+}
+
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
 h1{
     text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
              0px 8px 13px rgba(0,0,0,0.1),
@@ -17,6 +43,9 @@ body {
 }
 hr {
     border: 1px solid #5D6D63;
+}
+.selectedNavItem {
+    border-bottom: 3px solid #FFF;
 }
 #header nav{
     display:inline;
@@ -42,7 +71,7 @@ nav li {
     float: left;
     margin-left: 46px; 
 }
-nav li:nth-child(1){
+#top nav li:nth-child(1){
     margin-left: 0px;
 }
 nav a[href]{
@@ -90,6 +119,9 @@ a, a:visited{
      /*vertical-align: middle;*/
     /*text-decoration: none;*/
 }
+.sectionSeparator{
+    margin:50px auto;
+}
 .content {
     margin-left:75px;
     margin-top:25px;
@@ -132,4 +164,29 @@ a, a:visited{
 }
 #connect img{
     margin-right: 50px;
+}
+
+/*Responsive Styles*/
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+, only screen and (max-width: 1024px) {
+    /*Make dropdown links appear inline*/
+    #header ul {
+        position: static;
+        display: none;
+    }
+    /*Create vertical spacing*/
+    #header nav ul li {
+        margin-bottom: 1px;
+    }
+    /*Make all menu links full width*/
+    #header nav ul li,  #header nav ul li a {
+        width: 100%;
+        text-align: center;
+    }
+        /*Display 'show menu' link*/
+    .show-menu {
+        display:inline-block;
+    }
 }
