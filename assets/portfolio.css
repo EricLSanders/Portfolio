@@ -3,17 +3,17 @@
 .show-menu {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-decoration: none;
-    color: #fff;
-    background: #19c589;
-    /*text-align: center;*/
-/*    padding: 0;*/
-    display: none;
-    float: right;
+    color: black;
+    background: white;
+    display:none;
+    position: absolute;
+    right: 0;
     margin-right: 100px;
-    border: red 3px solid;
-    padding: 10px 0;
-    vertical-align: center;
+    border: gray 1px solid;
+    padding: 10px 10px;
+    margin-top: -10px;
 }
+
 
 /*Hide checkbox*/
 input[type=checkbox]{
@@ -21,7 +21,12 @@ input[type=checkbox]{
 }
 
 input[type=checkbox]:checked ~ #menu{
-    display: block;
+    display: inline-block;
+}
+
+#navbar hr {
+    border: 1px solid #FFF;
+    margin:25px 50px;
 }
 
 h1{
@@ -47,7 +52,7 @@ hr {
 .selectedNavItem {
     border-bottom: 3px solid #FFF;
 }
-#header nav{
+#navbar{
     display:inline;
 }
 #header {
@@ -61,7 +66,7 @@ hr {
     width: 100%;
 
 }
-#header nav ul {
+#navbar ul {
     float: right;
     margin: 0px;
     margin-right: 100px;
@@ -172,21 +177,25 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px)
 , only screen and (max-width: 1024px) {
     /*Make dropdown links appear inline*/
-    #header ul {
+    #navbar ul {
         position: static;
         display: none;
     }
     /*Create vertical spacing*/
-    #header nav ul li {
+    #navbar ul li {
         margin-bottom: 1px;
     }
     /*Make all menu links full width*/
-    #header nav ul li,  #header nav ul li a {
+    #navbar ul li,  #navbar ul li a {
         width: 100%;
         text-align: center;
     }
         /*Display 'show menu' link*/
     .show-menu {
         display:inline-block;
+
+    }
+    #menu {
+        display:inline;
     }
 }
