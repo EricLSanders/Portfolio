@@ -4,16 +4,24 @@
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-decoration: none;
     color: black;
-    background: white;
+    /*background: white;*/
     display:none;
     position: absolute;
     right: 0;
     margin-right: 100px;
-    border: gray 1px solid;
-    padding: 10px 10px;
-    margin-top: -10px;
+    /*border: gray 1px solid;*/
+    margin-top: -2px;
 }
-
+.show-menu:before { 
+    border-bottom: 12px double white;
+    border-top: 4px solid white;    
+    content:"";
+    height: 4px; 
+    position: absolute; 
+    right:3px;  
+    top: 4px; 
+    width:30px; 
+}
 
 /*Hide checkbox*/
 input[type=checkbox]{
@@ -23,10 +31,14 @@ input[type=checkbox]{
 input[type=checkbox]:checked ~ #menu{
     display: inline-block;
 }
+input[type=checkbox]:checked ~ #menu-hr{
+    display: block;
+}
 
 #navbar hr {
     border: 1px solid #FFF;
     margin:25px 50px;
+    display:none;
 }
 
 h1{
@@ -70,6 +82,7 @@ hr {
     float: right;
     margin: 0px;
     margin-right: 100px;
+
 }
 nav li {
     list-style-type: none;
@@ -81,7 +94,7 @@ nav li {
 }
 nav a[href]{
     color: #fff;
-    font-size: 20px;
+    /*font-size: 20px;*/
     font-weight: bold;
     letter-spacing: -1px;
     text-decoration: none
@@ -113,7 +126,7 @@ a[href="#top"] {
     margin-right:50px;
     vertical-align: middle;
     text-decoration: none;
-    font-size: 20px;
+    /*font-size: 20px;*/
     font-weight: bold;
 }
 a img{
@@ -180,10 +193,13 @@ and (max-device-width : 1024px)
     #navbar ul {
         position: static;
         display: none;
+        width:100%;
+        margin-right:0px;
     }
     /*Create vertical spacing*/
     #navbar ul li {
         margin-bottom: 1px;
+        margin-left: 0px;
     }
     /*Make all menu links full width*/
     #navbar ul li,  #navbar ul li a {
