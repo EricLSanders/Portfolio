@@ -1,4 +1,10 @@
+
+/* Navbar link clicked */
 $('a[href^="#"]').on('click', function(event) {
+	 //Hide collapsable menu if need be
+    if($('.hamburger-nav').is(':visible')) {
+    	$('#hamburger-nav').attr('checked', false);
+	}
     var target = $( $(this).attr('href') );
     if( target.length ) {
         event.preventDefault();
@@ -13,24 +19,29 @@ $('a[href^="#"]').on('click', function(event) {
   $(document).ready(function(){
 	$(function () {
 		$(window).scroll(function () {
+
+			/* Hide/Show the Header/Home if need be */
 			if ($(this).scrollTop() > ($("#top").height())/4) {
-				$("#top-navbar").fadeOut(500, function(){});
+				$("#home-navbar").fadeOut(500, function(){});
 				$("#header").fadeIn(500, function(){});
 			} else {
-				$("#top-navbar").fadeIn(500, function(){});
+				/* Don't show the home navbar if the screen width is greater than 945 */
+				if($(this).width() > 945){
+					$("#home-navbar").fadeIn(500, function(){});
+				}
 				$("#header").fadeOut(500, function(){});
 			}
 
+			/* Change the selected navbar link when the section is scrolled into view */
+
 			scrollPosition	= $(this).scrollTop();
+			headerHeight = $("#header").outerHeight(true);
+			scrollOffset = $( window ).height()/4;
 		 	$('#header nav a[href^="#"]').each(function() {
-				headerWrapper = parseInt($('#header').outerHeight());
-	
 	
 				thisHref = $( $(this).attr('href') );
-				thisTruePosition = parseInt($(thisHref).offset().top);
-				headerHeight = $("#header").outerHeight(true);
-				hrefHeight = $(thisHref).height();
-				thisPosition = thisTruePosition - headerHeight - ($( window ).height()/3);
+				thisHrefTopPosition = $(thisHref).offset().top;
+				thisPosition = thisHrefTopPosition - headerHeight - scrollOffset;
 				
 				if(scrollPosition >= thisPosition) {
 
