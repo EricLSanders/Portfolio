@@ -55,7 +55,7 @@ body {
     background: #1A3742; /* fallback for old browsers */
     font-family: 'Source Sans Pro', sans-serif;
     color: white;
-    margin: auto 100px;
+    margin: auto 5%;
     height: 100%;
 }
 hr {
@@ -94,7 +94,7 @@ nav li {
 }
 nav a[href]{
     color: #fff;
-    /*font-size: 20px;*/
+    font-size: 20px;
     font-weight: bold;
     letter-spacing: -1px;
     text-decoration: none
@@ -126,7 +126,7 @@ a[href="#top"] {
     margin-right:50px;
     vertical-align: middle;
     text-decoration: none;
-    /*font-size: 20px;*/
+    font-size: 20px;
     font-weight: bold;
 }
 a img{
@@ -141,17 +141,17 @@ a, a:visited{
     margin:50px auto;
 }
 .content {
-    margin-left:75px;
-    margin-top:25px;
+    margin-left:2%;
+    margin-top:1%;
 }
 #portrait {
-    margin-right: 20px;
+    margin-right: 1%;
     float: left;
 }
 
 #marimba {
     float:right;
-    margin-left: 20px;
+    margin-left: 1%;
 }
 
 #about .content {
@@ -169,7 +169,7 @@ a, a:visited{
     margin-bottom: 0px;
     display: inline;
     vertical-align: middle;
-    margin-right: 10px;
+    margin-right: 1%;
 } 
 #projects .content h4 {
     margin-top: 0px;
@@ -185,6 +185,19 @@ a, a:visited{
 }
 
 /*Responsive Styles*/
+
+@media only screen
+and (max-device-width : 768px){
+    #portrait {
+        height: 150px;
+    }
+
+    #marimba {
+        width: 125px;
+    }
+
+}
+
 @media only screen
 and (min-device-width : 768px)
 and (max-device-width : 1024px)
