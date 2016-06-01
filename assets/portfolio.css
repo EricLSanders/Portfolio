@@ -8,7 +8,7 @@
     display:none;
     position: absolute;
     right: 0;
-    margin-right: 100px;
+    margin-right: 5%;
     /*border: gray 1px solid;*/
     margin-top: -2px;
 }
@@ -107,8 +107,8 @@ nav a[href]{
 }
 #home-content{
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 45%;
+    transform: translateY(-55%);
 }
 #top nav ul {
     display: inline-block;
@@ -122,8 +122,8 @@ nav a[href]{
     transform: translateY(-25%);
 }
 a[href="#top"] {
-    margin-left:100px;
-    margin-right:50px;
+    margin-left:5%;
+    margin-right:2.5%;
     vertical-align: middle;
     text-decoration: none;
     font-size: 20px;
@@ -138,7 +138,7 @@ a, a:visited{
     /*text-decoration: none;*/
 }
 .sectionSeparator{
-    margin:50px auto;
+    margin:2.5% auto;
 }
 .content {
     margin-left:2%;
@@ -181,15 +181,16 @@ a, a:visited{
    text-decoration: none; 
 }
 #connect img{
-    margin-right: 50px;
+    margin-right: 10%;
 }
 
 /*Responsive Styles*/
 
 @media only screen
-and (max-device-width : 768px){
+and (max-device-width : 425px){
     #portrait {
         height: 150px;
+        margin-right: 5%;
     }
 
     #marimba {
