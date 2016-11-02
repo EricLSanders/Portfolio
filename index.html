@@ -17,11 +17,21 @@
       ga('send', 'pageview');
 
     </script>
+	
+
+	<script>
+	var trackOutboundLink = function(url) {
+	   ga('send', 'event', 'outbound', 'click', url, {
+		 'transport': 'beacon',
+		 'hitCallback': function(){document.location = url;}
+	   });
+	}
+	</script>
 </head>
 <body>
     <header id="header"> 
         <a href="#home">Eric Sanders</a>
-        <a href="https://github.com/EricLeeSanders">
+        <a href="https://github.com/EricLeeSanders" onclick="trackOutboundLink('https://github.com/EricLeeSanders'); return false;">
             <img src="assets/imgs/GitHub-Mark-Light-64px.png" alt="GitHub" height="24" width="24">
         </a>
         <nav id = "navbar">
@@ -36,7 +46,7 @@
                 <li><a href="#skills">Skills</a></li>   
                 <li><a href="#awards">Awards</a></li>
                 <li><a href="#connect">Connect</a></li>
-                <li><a href="assets/docs/EricSandersResume.pdf">Resume</a></li>
+                <li><a href="assets/docs/EricSandersResume.pdf" onclick="trackOutboundLink('assets/docs/EricSandersResume.pdf'); return false;">Resume</a></li>
               </ul>
         </nav>
     </header>
@@ -55,7 +65,7 @@
             <li><a href="#skills">Skills</a></li>          
             <li><a href="#awards">Awards</a></li>
             <li><a href="#connect">Connect</a></li>
-            <li><a href="assets/docs/EricSandersResume.pdf">Resume</a></li>
+            <li><a href="assets/docs/EricSandersResume.pdf" onclick="trackOutboundLink('assets/docs/EricSandersResume.pdf'); return false;">Resume</a></li>
           </ul>
         </nav>
     </div>
@@ -158,36 +168,11 @@
     </div>
     <div id="projects">  
         <h1>Projects</h1>
-
-        <div class = "content">
-            <p>
-                <h2> Safe PDF Merge </h2>
-                <a href="https://github.com/EricLeeSanders/safe-pdf-merge">
-                    <img src="assets/imgs/GitHub-Mark-Light-64px.png" alt="GitHub" height="24" width="24">
-                </a>
-                <h4> Node.js, MySQL, HTML/CSS/JavaScript</h4>
-                <h4> <a href="https://www.safepdfmerge.com">www.SafePDFMerge.com</a></h4>
-                This is a simple app that I wrote that allows users to Merge PDFs online through a secured connection. I later added split functionality so users can now split a PDF into multiple PDF files. It was a goal of mine to try and break off from OOP and try something different. Writing this app exposed me to a lot of new things, specifically linux and server administration. I currently have the app running on an AWS EC2 t2.micro instance. Visit the site at <a href="https://www.safepdfmerge.com">www.SafePDFMerge.com</a>.
-            </p>
-            <hr>
-        </div>
-
-        <div class = "content">
-            <p>
-                <h2> Portfolio </h2>
-                <a href="https://github.com/EricLeeSanders/Portfolio">
-                    <img src="assets/imgs/GitHub-Mark-Light-64px.png" alt="GitHub" height="24" width="24">
-                </a>
-                <h4> HTML/CSS/JavaScript</h4>
-                My online porfolio is a new project. I plan to update it regularly, adding new content and techniques that I learn in front end development.
-            </p>
-            <hr>
-        </div>
-
+		
         <div class = "content">
             <p>
                 <h2> Foxhole Defense </h2>
-                <a href="https://github.com/EricLeeSanders/FoxholeDefense">
+                <a href="https://github.com/EricLeeSanders/FoxholeDefense" onclick="trackOutboundLink('https://github.com/EricLeeSanders/FoxholeDefense'); return false;">
                     <img src="assets/imgs/GitHub-Mark-Light-64px.png" alt="GitHub" height="24" width="24">
                 </a>
                 <h4> Android, iOS, HTML, Desktop</h4>
@@ -201,8 +186,33 @@
 
         <div class = "content">
             <p>
+                <h2> Safe PDF Merge </h2>
+                <a href="https://github.com/EricLeeSanders/safe-pdf-merge" onclick="trackOutboundLink('https://github.com/EricLeeSanders/safe-pdf-merge'); return false;">
+                    <img src="assets/imgs/GitHub-Mark-Light-64px.png" alt="GitHub" height="24" width="24">
+                </a>
+                <h4> Node.js, MySQL, HTML/CSS/JavaScript</h4>
+                <h4> <a href="https://www.safepdfmerge.com" onclick="trackOutboundLink('https://www.safepdfmerge.com'); return false;">www.SafePDFMerge.com</a></h4>
+                This is a simple app that I wrote that allows users to Merge PDFs online through a secured connection. I later added split functionality so users can now split a PDF into multiple PDF files. It was a goal of mine to try and break off from OOP and try something different. Writing this app exposed me to a lot of new things, specifically linux and server administration. I currently have the app running on an AWS EC2 t2.micro instance. Visit the site at <a href="https://www.safepdfmerge.com" onclick="trackOutboundLink('https://www.safepdfmerge.com'); return false;">www.SafePDFMerge.com</a>.
+            </p>
+            <hr>
+        </div>
+
+        <div class = "content">
+            <p>
+                <h2> Portfolio </h2>
+                <a href="https://github.com/EricLeeSanders/Portfolio" onclick="trackOutboundLink('https://github.com/EricLeeSanders/Portfolio'); return false;">
+                    <img src="assets/imgs/GitHub-Mark-Light-64px.png" alt="GitHub" height="24" width="24">
+                </a>
+                <h4> HTML/CSS/JavaScript</h4>
+                My online porfolio is a new project. I plan to update it regularly, adding new content and techniques that I learn in front end development.
+            </p>
+            <hr>
+        </div>
+
+        <div class = "content">
+            <p>
                 <h2> RSA Encryption </h2>
-                <a href="https://github.com/EricLeeSanders/RSA-Encryption">
+                <a href="https://github.com/EricLeeSanders/RSA-Encryption" onclick="trackOutboundLink('https://github.com/EricLeeSanders/RSA-Encryption'); return false;">
                     <img src="assets/imgs/GitHub-Mark-Light-64px.png" alt="GitHub" height="24" width="24">
                 </a>
                 <h4> Java </h4>
@@ -214,7 +224,7 @@
         <div class = "content">
             <p>
                 <h2> Classical Ciphers </h2>
-                <a href="https://github.com/EricLeeSanders/Classical-Ciphers">
+                <a href="https://github.com/EricLeeSanders/Classical-Ciphers" onclick="trackOutboundLink('https://github.com/EricLeeSanders/Classical-Ciphers'); return false;">
                     <img src="assets/imgs/GitHub-Mark-Light-64px.png" alt="GitHub" height="24" width="24">
                 </a>
                 <h4> Java, Swing </h4>
@@ -288,7 +298,7 @@
         <div class = "content">
             Below is a list of awards and select achievements.
                 <ul>
-                    <li><a href="http://blogs.butler.edu/dawgblog/2014/04/student-employee-of-the-year/">State of Indiana Student Employee of the Year (2013-2014)</a></li>
+                    <li><a href="http://blogs.butler.edu/dawgblog/2014/04/student-employee-of-the-year/" onclick="trackOutboundLink('http://blogs.butler.edu/dawgblog/2014/04/student-employee-of-the-year/'); return false;">State of Indiana Student Employee of the Year (2013-2014)</a></li>
                     <li>Butler University Student Employee of the Year (2013-2014)</li>       
                     <li>Dean's List (2014)</li>
                     <li>Computer Science Honor Society (Upsilon Pi Epsilon)</li>
@@ -311,10 +321,10 @@
             <a href="mailto:EricLeeSanders@gmail.com">
                 <img src="assets/imgs/email.png" alt="GitHub" height="48">
             </a>
-            <a href="https://github.com/EricLeeSanders">
+            <a href="https://github.com/EricLeeSanders" onclick="trackOutboundLink('https://github.com/EricLeeSanders'); return false;">
                 <img src="assets/imgs/GitHub-Mark-Light-64px.png" alt="GitHub" height="48">
             </a>
-            <a href="https://www.linkedin.com/in/EricLeeSanders">
+            <a href="https://www.linkedin.com/in/EricLeeSanders" onclick="trackOutboundLink('https://www.linkedin.com/in/EricLeeSanders'); return false;">
                 <img src="assets/imgs/linkedin.png" alt="GitHub" height="48">
             </a>
         </div>
