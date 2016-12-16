@@ -35,7 +35,7 @@
 				$("#home-navbar").fadeOut(500, function(){});
 				$("#header").fadeIn(500, function(){});
 			} else {
-				/* Don't show the home navbar if the screen width is greater than 945 */
+				/* Don't show the home navbar on mobile devices */
 				if($(this).width() > 945){
 					$("#home-navbar").fadeIn(500, function(){});
 				}
