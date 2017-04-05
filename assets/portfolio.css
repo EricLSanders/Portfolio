@@ -133,7 +133,7 @@ a[href="#home"] {
 
 #header {
     display:none;
-    background: #5D6D63;
+    background: #333333;
     padding: 28px 0 26px;
     position: fixed;
     top: 0;
@@ -145,7 +145,14 @@ a[href="#home"] {
 #home{
     text-align: center;
     height: 100%;
+}
 
+#page-turn-img {
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 313px;
+    height: 309px
 }
 
 #home-content{
@@ -228,6 +235,7 @@ and (max-device-width : 425px){
 @media only screen
 and (min-width: 946px) 
 and (max-width: 1185px) {
+
     #menu {
         margin-top:30px;
         margin-right:0px;
@@ -242,6 +250,11 @@ and (max-width: 1185px) {
 
 @media only screen
 and (max-width: 945px) {
+
+    #page-turn-img {
+        width: 212px;
+        height: 209px
+    }
 
     #menu {
         position: static;
@@ -267,5 +280,15 @@ and (max-width: 945px) {
 
     #home-navbar {
         display:none;
+    }
+}
+
+@media only screen
+and (max-width: 715px) {
+
+    #page-turn-img {
+        display: none;
+        width: 212px;
+        height: 209px
     }
 }
