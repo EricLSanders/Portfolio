@@ -5,7 +5,12 @@
 	<title>Eric Sanders - Software Engineer</title>
     <link rel="shortcut icon" type="image/png" href="assets/imgs/favicon.png"/>
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="assets/portfolio.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/timeline.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/owl.theme.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/portfolio.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome/css/font-awesome.min.css">
+	<script src="assets/js/modernizr.js"></script> 
     <!-- Async -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -32,9 +37,9 @@
     <header id="header"> 
         <a href="#home">Eric Sanders</a>
         <a href="https://github.com/EricLeeSanders" onclick="trackOutboundLink('https://github.com/EricLeeSanders'); return false;">
-            <img src="assets/imgs/GitHub-Mark-Light-64px.png" alt="GitHub" height="24" width="24">
+            <img src="assets/imgs/GitHub-Mark-Light-64px.png" alt="GitHub" height="32" width="32">
         </a>
-        <nav id = "navbar">
+        <nav id = "main-navbar">
             <label for="hamburger-nav" class="hamburger-nav"></label>
             <input type="checkbox" id="hamburger-nav" role="button">
             <hr id = "menu-hr">
@@ -51,7 +56,6 @@
         </nav>
     </header>
     <div id="home">  
-        <img src="assets/imgs/page-turn.png" id="page-turn-img">
         <div id = "home-content">
             <h1>Eric Sanders</h1>
             <h2>Software Engineer</h2>
@@ -72,249 +76,318 @@
     <hr>
     <div id="about"> 
         <h1>About</h1>
-        <div class = "content">
-            <img id = "portrait" src="assets/imgs/portrait.jpg" alt="portrait" height ="200">
-            <p>
-            I first began programming when I was 11 years old. I began with Visual Basic 6 and quickly expanded from there - writing anything I could think of, from games to websites. When I was 13 I created a website dedicated to teaching and blogging about Visual Basic 6.
-            </p>
+		<div>
+			<img id = "portrait" src="assets/imgs/portrait.jpg" alt="portrait" height ="200">
+			<p>
+			I first began programming when I was 11 years old. I began with Visual Basic 6 and quickly expanded from there - writing anything I could think of, from games to websites. When I was 13 I created a website dedicated to teaching and blogging about Visual Basic 6.
+			</p>
 
-            <p>
-             I graduated from Butler University (2014) with a degree in Software Engineering and Music Performance where I was able to explore two fields considered by many to be vastly different. However, I found them to be complementary in many ways, most notably in the creativity required to excel in each. While I was in school, I was fortunate to have two internships that prepared me for professional positions. I interned at Simon Property Group as an Application Developer and at Rook Security as a Software Developer. 
-             While at Simon I learned about enterprise software, design patterns, and Java Spring. I was also able to hone my object oriented programming skills. During my internship at Rook Security, I learned Python and was able to work as a member of the development team to develop new cyber security software. 
-            </p>
-            <img id = "marimba" src="assets/imgs/marimba.png" alt="portrait" width ="250">
-            <p>
-            After graduating from Butler, I began my career at Wonderware North as an Application Consultant. At Wonderware North, I worked in small agile teams to deliver and implement custom solutions for customers. I had many roles and developed in a variety of programming languages while utilizing different technologies. I also gathered requirements from customers and ensured quality deliverables. In November 2016, I began working at Walker Information as a Java Programmer/Analyst.
-            </p>
-            <p>
-            I'm constantly striving to become a better software engineer. I'm frequently enrolled in online courses through places such as Coursera and MIT OpenCourseWare to futher develop my skills and broaden my knowledge. In my freetime, I often work on multiple projects which can be viewed on my <a href="https://github.com/EricLeeSanders" onclick="trackOutboundLink('https://github.com/EricLeeSanders'); return false;">GitHub</a>. 
-            </p>
-        </div>
+			<p>
+			 I graduated from Butler University (2014) with a degree in Software Engineering and Music Performance where I was able to explore two fields considered by many to be vastly different. However, I found them to be complementary in many ways, most notably in the creativity required to excel in each. While I was in school, I was fortunate to have two internships that prepared me for professional positions. I interned at Simon Property Group as an Application Developer and at Rook Security as a Software Developer. 
+			 While at Simon I learned about enterprise software, design patterns, and Java Spring. I was also able to hone my object oriented programming skills. During my internship at Rook Security, I learned Python and was able to work as a member of the development team to develop new cyber security software. 
+			</p>
+			<img id = "marimba" src="assets/imgs/marimba.png" alt="portrait" width ="250">
+			<p>
+			After graduating from Butler, I began my career at Wonderware North as an Application Consultant. At Wonderware North, I worked in small agile teams to deliver and implement custom solutions for customers. I had many roles and developed in a variety of programming languages while utilizing different technologies. I also gathered requirements from customers and ensured quality deliverables. In November 2016, I began working at Walker Information as a Java Programmer/Analyst.
+			</p>
+			<p>
+			I'm constantly striving to become a better software engineer. I'm frequently enrolled in online courses through places such as Coursera and MIT OpenCourseWare to futher develop my skills and broaden my knowledge. In my freetime, I often work on multiple projects which can be viewed on my <a href="https://github.com/EricLeeSanders" onclick="trackOutboundLink('https://github.com/EricLeeSanders'); return false;">GitHub</a>. 
+			</p>
+		</div>
         <hr class = "sectionSeparator">
     </div>
-    <div id="experience">  
-        <h1>Experience</h1>
-        <div class = "content">
-            <h3>Walker Information</h3>
-            Nov. 2016 - Present 
-            <br>Indianapolis, IN
-            <br>Java Programmer/Analyst
-            <ul>
-                <li>Work as a member of the Application Development team using Java SOAP and RESTful web services</li>
-            </ul>
-        <hr>
-        </div>
-        <div class = "content">
-            <h3>Wonderware North</h3>
-            Jan. 2015 - Nov. 2016 
-            <br>Indianapolis, IN
-            <br>Application Consultant
-            <ul>
-                <li>Wrote an ASP.NET web application for a customer, including designing and developing a MS SQL database, that allowed dynamic creation of quality tests for their products (Used: C#, JavaScript, HTML, CSS, T-SQL)</li>
-                <li>Built a purge and archive solution for a customer's MS SQL database using T-SQL to keep their database lean and responsive</li>
-            </ul>
-        <hr>
-        </div>
-        <div class = "content">
-            <h3>Rook Security</h3>
-            Oct. 2014 - Dec. 2014
-            <br>Indianapolis, IN
-            <br>Software Development Intern
-            <ul>
-                <li>Worked as a member of the Software Development team to develop innovative threat tracking and prevention software</li>
-                <li>Wrote Python applications to help prevent clients from malicious attacks</li>
-            </ul>
-        <hr>
-        </div>
-        <div class = "content">
-            <h3>Simon Property Group</h3>
-            May 2014 - Aug. 2014
-            <br>Indianapolis, IN
-            <br>Application Development Intern
-            <ul>
-                <li>Created a web application using Java Spring, Hibernate, HTML, CSS, and Apache POI that allowed managers to receive a styled Excel spreadsheet of all employees on any floor of the building</li>
-				<li>Set up and configured Jenkins for the development team to use for continuous integration</li>
-			</ul>
-        <hr>
-        </div>
-        <div class = "content">
-            <h3>Butler University Irwin Library</h3>
-            Jan. 2012 - May 2014
-            <br>Indianapolis, IN
-            <br>Library Technical Assistant
-            <ul>
-                <li>Wrote a Java application to automate, optimize, and improve a manual task performed by library employees
-                    <ul>
-                        <li>Received two awards for the development of this application
-                            <ul>
-                                <li>State of Indiana Student Employee of the Year</li>
-                                <li>Butler University Student Employee of the Year</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <hr class = "sectionSeparator">
-    </div>
+	
+	<div id="experience">  
+		<h1>Experience</h1>
+		<div id="cd-timeline" class="cd-container">
+			<div class="cd-timeline-block">
+				<div class="cd-timeline-img cd-location">
+					<img src="assets/imgs/cd-icon-location.svg" alt="Location">
+				</div>
+				<div class="cd-timeline-content">
+					<div class="cd-timeline-header">
+						<h2>Walker Information</h2>
+						Indianapolis, IN
+						<br>Java Programmer/Analyst
+					</div>
+					<ul>
+						<li>Work as a member of the Application Development team using Java SOAP and RESTful web services</li>
+					</ul>
+					<span class="cd-date">Nov. 2016 - Present</span>
+				</div>
+			</div>
+			<div class="cd-timeline-block">
+				<div class="cd-timeline-img cd-location">
+					<img src="assets/imgs/cd-icon-location.svg" alt="Location">
+				</div>
+				<div class="cd-timeline-content">
+					<div class="cd-timeline-header">
+						<h2>Wonderware North</h2>
+						Indianapolis, IN
+						<br>Application Consultant
+					</div>
+					<ul>
+						<li>Wrote an ASP.NET web application for a customer, including designing and developing a MS SQL database, that allowed dynamic creation of quality tests for their products (Used: C#, JavaScript, HTML, CSS, T-SQL)</li>
+						<li>Built a purge and archive solution for a customer's MS SQL database using T-SQL to keep their database lean and responsive</li>
+					</ul>
+					<span class="cd-date">Jan. 2015 - Nov. 2016</span>
+				</div>
+			</div>
+			<div class="cd-timeline-block">
+				<div class="cd-timeline-img cd-location">
+					<img src="assets/imgs/cd-icon-location.svg" alt="Location">
+				</div>
+				<div class="cd-timeline-content">
+					<div class="cd-timeline-header">
+						<h2>Rook Security</h2>
+						Indianapolis, IN
+						<br>Software Development Intern
+					</div>
+					<ul>
+						<li>Worked as a member of the Software Development team to develop innovative threat tracking and prevention software</li>
+						<li>Wrote Python applications to help prevent clients from malicious attacks</li>
+					</ul>
+					<span class="cd-date">Oct. 2014 - Dec. 2014</span>
+				</div>
+			</div>
+			<div class="cd-timeline-block">
+				<div class="cd-timeline-img cd-location">
+					<img src="assets/imgs/cd-icon-location.svg" alt="Location">
+				</div> 
+				<div class="cd-timeline-content">
+					<div class="cd-timeline-header">
+						<h2>Simon Property Group</h2>
+						Indianapolis, IN
+						<br>Application Development Intern
+					</div>
+					<ul>
+						<li>Created a web application using Java Spring, Hibernate, HTML, CSS, and Apache POI that allowed managers to receive a styled Excel spreadsheet of all employees on any floor of the building</li>
+						<li>Set up and configured Jenkins for the development team to use for continuous integration</li>
+					</ul>
+					<span class="cd-date">May. 2014 - Aug. 2014</span>
+				</div>
+			</div>
+			<div class="cd-timeline-block">
+				<div class="cd-timeline-img cd-location">
+					<img src="assets/imgs/cd-icon-location.svg" alt="Location">
+				</div> 
+				<div class="cd-timeline-content">
+					<div class="cd-timeline-header">
+						<h2>Butler University Irwin Library</h2>
+						Indianapolis, IN
+						<br>Library Technical Assistant
+					</div>
+					<ul>
+						<li>Wrote a Java application to automate, optimize, and improve a manual task performed by library employees
+							<ul>
+								<li>Received two awards for the development of this application
+									<ul>
+										<li>State of Indiana Student Employee of the Year</li>
+										<li>Butler University Student Employee of the Year</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<span class="cd-date">Jan. 2012 - May. 2014</span>
+				</div>
+			</div>
+		</div>
+		<hr class = "sectionSeparator">
+	</div>
+
+
+	
     <div id="projects">  
         <h1>Projects</h1>
+				
+		<div class="owl-carousel owl-theme">
+			
+			<div class="project">
+				<div class="project-picture">
+					<img class="rotate-right" src="assets/imgs/foxhole-defense.png" alt="project">
+				</div>
+				<div class="project-description">
+					<h2> Foxhole Defense </h2>
+					<a href="https://github.com/EricLeeSanders/FoxholeDefense" onclick="trackOutboundLink('https://github.com/EricLeeSanders/FoxholeDefense'); return false;">
+						<img src="assets/imgs/GitHub-Mark-64px.png" alt="GitHub" height="24" width="24">
+					</a>
+					<h4> Android, iOS, HTML, Desktop</h4>
+					<p>
+						Foxhole Defense is a game that I've been working on for Android, iOS, HTML, and Desktop. It's a top down, 2d tower defense game with a military theme. Players place soldiers (towers) anywhere on the map and call for aircraft support to stop waves of enemy soldiers from reaching their base. It is slightly different than a typical tower defense game in that the waves of enemies can fire back and kill the soldiers that the player places on the map.
+					</p>
+				</div>
+			</div>
+			
+			<div class="project">
+				<div class="project-picture">
+					<img class="rotate-right" src="assets/imgs/safepdfmerge.png" alt="project">
+				</div>
+				<div class="project-description">
+					<h2> Safe PDF Merge </h2>
+					<a href="https://github.com/EricLeeSanders/safe-pdf-merge" onclick="trackOutboundLink('https://github.com/EricLeeSanders/safe-pdf-merge'); return false;">
+						<img src="assets/imgs/GitHub-Mark-64px.png" alt="GitHub" height="24" width="24">
+					</a>
+					<h4> Node.js, MySQL, HTML/CSS/JavaScript</h4>
+					<h4> <a href="https://www.safepdfmerge.com" onclick="trackOutboundLink('https://www.safepdfmerge.com'); return false;">www.SafePDFMerge.com</a></h4>
+					<p>
+						This is a simple app that I wrote that allows users to Merge (and later added Split functionality) PDFs online through a secured connection. Writing this app exposed me to a lot of new things, specifically linux and server administration. I currently have the app running on an AWS EC2 t2.micro instance. Visit the site at <a href="https://www.safepdfmerge.com" onclick="trackOutboundLink('https://www.safepdfmerge.com'); return false;">www.SafePDFMerge.com</a>.
+					</p>
+				</div>
+			</div>
+			
+			<div class="project">
+				<div class="project-picture">
+					<img src="assets/imgs/get-stuff-done.png" alt="project">
+				</div>
+				<div class="project-description">
+					<h2> Get Stuff Done! </h2>
+					<a href="https://github.com/EricLeeSanders/get-stuff-done-mobile" onclick="trackOutboundLink('https://github.com/EricLeeSanders/get-stuff-done-mobile'); return false;">
+						<img src="assets/imgs/GitHub-Mark-64px.png" alt="GitHub" height="24" width="24">
+					</a>
+					<h4> Ionic2, Angular2, TypeScript/JavaScript </h4>
+					<p>
+						A simple task app that a friend and I are currently working on. This app differs from other task apps by keeping things simple, easy to use, and unrestrictive to the user.
+						The app is written for mobile devices as well as web. 
+					</p>
+				</div>
+			</div>
+			
+			<div class="project">
+				<div class="project-picture">
+					<img class="rotate-left" src="assets/imgs/classical-ciphers.jpg" alt="project">
+				</div>
+				<div class="project-description">
+					<h2> Classical Ciphers </h2>
+					<a href="https://github.com/EricLeeSanders/Classical-Ciphers" onclick="trackOutboundLink('https://github.com/EricLeeSanders/Classical-Ciphers'); return false;">
+						<img src="assets/imgs/GitHub-Mark-64px.png" alt="GitHub" height="24" width="24">
+					</a>
+					<h4> Java, Swing </h4>
+					<p>     
+						This was a midterm project for my cryptography class at Butler. We had to implement encryption and decryption for a Shift, Affine, Substitution, and Vigenere Cipher. 
+						I went a few levels beyond by adding a GUI and also implementing auto decryption for Shift and Vigenere Cipher. It also utilizes the MVP and Observer design patterns.
+						I'm currently working on making this a Java Spring MVC app.
+					</p>
+				</div>
+			</div>
+		</div>
 		
-        <div class = "content">
-            <h2> Foxhole Defense </h2>
-            <a href="https://github.com/EricLeeSanders/FoxholeDefense" onclick="trackOutboundLink('https://github.com/EricLeeSanders/FoxholeDefense'); return false;">
-                <img src="assets/imgs/GitHub-Mark-Light-64px.png" alt="GitHub" height="24" width="24">
-            </a>
-            <h4> Android, iOS, HTML, Desktop</h4>
-            <p>
-                Foxhole Defense is a game that I've been working on for Android, iOS, HTML, and Desktop. It's a top down, 2d tower defense game with a military theme. Players place soldiers (towers) anywhere on the map and call for aircraft support to stop waves of enemy soldiers from reaching their base. It is slightly different than a typical tower defense game in that the waves of enemies can fire back and kill the soldiers that the player places on the map.
-            </p>
-            <hr>
-        </div>
-
-        <div class = "content">
-            <h2> Safe PDF Merge </h2>
-            <a href="https://github.com/EricLeeSanders/safe-pdf-merge" onclick="trackOutboundLink('https://github.com/EricLeeSanders/safe-pdf-merge'); return false;">
-                <img src="assets/imgs/GitHub-Mark-Light-64px.png" alt="GitHub" height="24" width="24">
-            </a>
-            <h4> Node.js, MySQL, HTML/CSS/JavaScript</h4>
-            <h4> <a href="https://www.safepdfmerge.com" onclick="trackOutboundLink('https://www.safepdfmerge.com'); return false;">www.SafePDFMerge.com</a></h4>
-            <p>
-                This is a simple app that I wrote that allows users to Merge PDFs online through a secured connection. I later added split functionality so users can now split a PDF into multiple PDF files. It was a goal of mine to try and break off from OOP and try something different. Writing this app exposed me to a lot of new things, specifically linux and server administration. I currently have the app running on an AWS EC2 t2.micro instance. Visit the site at <a href="https://www.safepdfmerge.com" onclick="trackOutboundLink('https://www.safepdfmerge.com'); return false;">www.SafePDFMerge.com</a>.
-            </p>
-            <hr>
-        </div>
-
-        <div class = "content">
-            <h2> Portfolio </h2>
-            <a href="https://github.com/EricLeeSanders/Portfolio" onclick="trackOutboundLink('https://github.com/EricLeeSanders/Portfolio'); return false;">
-                <img src="assets/imgs/GitHub-Mark-Light-64px.png" alt="GitHub" height="24" width="24">
-            </a>
-            <h4> HTML/CSS/JavaScript</h4>
-            <p>
-                My online porfolio is a new project. I plan to update it regularly, adding new content and techniques that I learn in front end development.
-            </p>
-            <hr>
-        </div>
-
-        <div class = "content">
-            <h2> RSA Encryption </h2>
-            <a href="https://github.com/EricLeeSanders/RSA-Encryption" onclick="trackOutboundLink('https://github.com/EricLeeSanders/RSA-Encryption'); return false;">
-                <img src="assets/imgs/GitHub-Mark-Light-64px.png" alt="GitHub" height="24" width="24">
-            </a>
-            <h4> Java </h4>
-            <p>
-                For my cryptography class at Butler, we had a to write our own implementation of an RSA encryption. With less than 24 hours to write it, the project turned out well. It is not a testament to my programming ability but shows that I have some knowledge about cryptology. I chose to write it in Java since I already had prior knowledge of BigIntegers.
-            </p>
-            <hr> 
-        </div>
-
-        <div class = "content">
-            <h2> Classical Ciphers </h2>
-            <a href="https://github.com/EricLeeSanders/Classical-Ciphers" onclick="trackOutboundLink('https://github.com/EricLeeSanders/Classical-Ciphers'); return false;">
-                <img src="assets/imgs/GitHub-Mark-Light-64px.png" alt="GitHub" height="24" width="24">
-            </a>
-            <h4> Java, Swing </h4>
-            <p>     
-                This was a midterm project for my cryptography class at Butler. We had to implement encryption and decryption for a Shift, Affine, Substitution, and Vigenere Cipher. I went a few levels beyond by adding a GUI and also implementing auto decryption for Shift and Vigenere Cipher. The auto decryption will automatically decrypt an encrypted text and give the shift or key that was used to encrypt the text. Shift uses frequency analysis to determine the similarity between each shift and the English language. Vigenere uses the Friedman Test as well as the Kasiski Test to deteremine the keyword length. Then using frequency analysis from the shift cipher, we find the best match to the English language for each coset. It utilizes the MVP and Observer design patterns.
-            </p>
-            <p>
-                I decided to use Java for this project because I was familiar with Swing. This allowed me to quickly create a GUI.
-            </p>
-            <p>
-                I plan to add a web front end for ths app in the near future and may add and/or improve auto decryptions.
-            </p>
-        </div>
         <hr class = "sectionSeparator">
     </div>
     <div id="skills">  
         <h1>Skills</h1>
-        <div class = "content">
-            <ul>
-                <li><strong>Languages</strong>: <u>Proficient:</u> Java, C#, SQL  &emsp; <u>Experience with:</u> Python, C++, JavaScript, HTML, CSS</li>
-                <li><strong>Libraries/Frameworks</strong>: jQuery, Spring, Hibernate, jUnit, .NET, ASP.NET, Node.js, Apache POI</li>                 
-                <li><strong>Object Oriented Design</strong>: UML, Design Patterns</li>        
-                <li><strong>Testing</strong>: Unit Testing, White/Black Box Testing, Data Flow, Path Based, Slice</li>    
-                <li><strong>Database</strong>: MS SQL, MySQL</li>
-                <li><strong>Methodologies</strong>: Test Driven Development, Agile/Scrum</li>       
-                <li><strong>Technologies</strong>: Git, TFS, Eclipse, Visual Studio</li>
-                <li><strong>Other</strong>: Strong Object-Oriented Programming/Design Skills, MS SSRS Reports, Wonderware products</li>
-            </ul>
-        </div>
+		<div id="canvas-holder">
+			<div class="doughnut-chart">
+				<canvas id="chart-area-1"></canvas>
+				
+				<div class="skill-chart-description">
+					Java, C#, SQL
+				</div>
+			</div>
+			<div class="doughnut-chart">
+				<canvas id="chart-area-2"></canvas>
+				
+				<div class="skill-chart-description">
+					JavaScript, HTML, CSS
+				</div>
+			</div>
+			<div class="doughnut-chart">
+				<canvas id="chart-area-3"></canvas>
+				
+				<div class="skill-chart-description">
+					Python, C++
+				</div>
+			</div>
+		</div>
+		<div class="hidden-content hide-content">
+			<ul>
+				<li><strong>Languages</strong>: <u>Proficient:</u> Java, C#, SQL  &emsp; <u>Experience with:</u> Python, C++, JavaScript, HTML, CSS</li>
+				<li><strong>Libraries/Frameworks</strong>: jQuery, Spring, Hibernate, jUnit, .NET, ASP.NET, Node.js, Apache POI</li>                 
+				<li><strong>Object Oriented Design</strong>: UML, Design Patterns</li>        
+				<li><strong>Testing</strong>: Unit Testing, White/Black Box Testing, Data Flow, Path Based, Slice</li>    
+				<li><strong>Database</strong>: MS SQL, MySQL</li>
+				<li><strong>Methodologies</strong>: Test Driven Development, Agile/Scrum</li>       
+				<li><strong>Technologies</strong>: Git, TFS, Eclipse, Visual Studio</li>
+				<li><strong>Other</strong>: Strong Object-Oriented Programming/Design Skills, MS SSRS Reports, Wonderware products</li>
+			</ul>
+		</div>
+		
+		<div class="show-more">
+			<span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+		</div>
     <hr class = "sectionSeparator">
     </div>
     <div id="education">  
         <h1>Education</h1>
-        <div class = "content">
-            <h3>Butler University - 2014 </h3>
-            <strong>Major</strong> : Software Engineering and Music Performance (Percussion)
-            <br>
-            <strong>GPA </strong>: 3.6
-            <br>
-            <p>
-            A few courses I have taken at Butler:
-            </p>
-            <ul>
-                <li>CS 351 - Algorithms</li>
-                <li>CS 431 - Theory of Operating Systems</li>       
-                <li>CS 433 - Database Systems</li>
-                <li>CS 435 - Computer Networks</li>
-                <li>CS 473 - Cryptography</li>
-                <li>SE 461 - Managing Software Development</li>
-                <li>SE 462 - Requirements Engineering</li>
-                <li>SE 463 - Testing and Quality Assurance</li>
-            </ul>
-            <p>
-            I also am regularly enrolled in online institutions through places such as Coursera and MIT OpenCourseWare. <br>
-            A few courses I have taken post Butler graduation:
-            </p>
-             <ul>
-                <li>Princeton - Algorithms, Part 1</li>
-                <li>Princeton - Algorithms, Part 2</li>      
-                <li>Stanford -  Algorithms: Design and Analysis, Part 1</li>
-                <li>MIT - Mathematics for Computer Science</li>
-            </ul>
-        </div>
+		<h3>Butler University - 2014 </h3>
+		<strong>Major</strong> : Software Engineering and Music Performance (Percussion)
+		<br>
+		<strong>GPA </strong>: 3.6
+		<br>
+		<p>
+		A few courses I have taken at Butler:
+		</p>
+		<ul>
+			<li>CS 351 - Algorithms</li>
+			<li>CS 431 - Theory of Operating Systems</li>       
+			<li>CS 433 - Database Systems</li>
+			<li>CS 435 - Computer Networks</li>
+			<li>CS 473 - Cryptography</li>
+			<li>SE 461 - Managing Software Development</li>
+			<li>SE 462 - Requirements Engineering</li>
+			<li>SE 463 - Testing and Quality Assurance</li>
+		</ul>
+		<p>
+		I also am regularly enrolled in online institutions through places such as Coursera and MIT OpenCourseWare. <br>
+		A few courses I have taken post Butler graduation:
+		</p>
+		 <ul>
+			<li>Princeton - Algorithms, Part 1</li>
+			<li>Princeton - Algorithms, Part 2</li>      
+			<li>Stanford -  Algorithms: Design and Analysis, Part 1</li>
+			<li>MIT - Mathematics for Computer Science</li>
+		</ul>
     <hr class = "sectionSeparator">
     </div>
     <div id="awards"> 
-        <h1>Awards and Achievements</h1>
-        <div class = "content">
-            Below is a list of awards and select achievements.
-                <ul>
-                    <li><a href="http://blogs.butler.edu/dawgblog/2014/04/student-employee-of-the-year/" onclick="trackOutboundLink('http://blogs.butler.edu/dawgblog/2014/04/student-employee-of-the-year/'); return false;">State of Indiana Student Employee of the Year (2013-2014)</a></li>
-                    <li>Butler University Student Employee of the Year (2013-2014)</li>       
-                    <li>Dean's List (2014)</li>
-                    <li>Computer Science Honor Society (Upsilon Pi Epsilon)</li>
-                </ul>
-        </div>
-        <div class = "content">
-            <h2> Student Employee of the Year </h2>
-            <p>
-            I was nominated for Butler University Student Employee of the Year by my then supervisor Sheri Stormes while working at Irwin Library as a student employee in the Fine Arts Department. I won the award for Butler University Student Employee of the Year and then also won Student Employee of the Year for the State of Indiana, which combines all universities in Indiana.
-            </p>
-            <p>
-            While working at Irwin Library, I wrote a program to help assist myself and coworkers with a tedious task that involved manually parsing a word document containing information about various pieces of music. The task was to sort this information by instrument instead of composer. With hundreds of pages and thousands of pieces of music, sorting manually would take anywhere from 5 - 10 hours. The program I wrote parsed the word document and sorted the pieces of music. It also utilized the <a href="https://www.microsoft.com/en-us/translator/translatorapi.aspx">Microsft Translator API</a> to automatically detect and translate text in languages other than English. This program allowed the user to scan through each piece of music within the program in order to ensure correct parsing and to fix any music that was out of order. Ultimately, the program decreased the process from an average of 7.5 hours to 30-45 minutes.
-            </p>
-        </div>
+        <h1>Awards</h1>
+		<p>Below is a list of awards and select achievements.</p>
+			<ul>
+				<li><a href="http://blogs.butler.edu/dawgblog/2014/04/student-employee-of-the-year/" onclick="trackOutboundLink('http://blogs.butler.edu/dawgblog/2014/04/student-employee-of-the-year/'); return false;">State of Indiana Student Employee of the Year (2013-2014)</a></li>
+				<li>Butler University Student Employee of the Year (2013-2014)</li>       
+				<li>Dean's List (2014)</li>
+				<li>Computer Science Honor Society (Upsilon Pi Epsilon)</li>
+			</ul>
+		<h2> Student Employee of the Year </h2>
+		<p>
+		I was nominated for Butler University Student Employee of the Year by my then supervisor Sheri Stormes while working at Irwin Library as a student employee in the Fine Arts Department. I won the award for Butler University Student Employee of the Year and then also won Student Employee of the Year for the State of Indiana, which combines all universities in Indiana.
+		</p>
+		<p>
+		While working at Irwin Library, I wrote a program to help assist myself and coworkers with a tedious task that involved manually parsing a word document containing information about various pieces of music. The task was to sort this information by instrument instead of composer. With hundreds of pages and thousands of pieces of music, sorting manually would take anywhere from 5 - 10 hours. The program I wrote parsed the word document and sorted the pieces of music. It also utilized the <a href="https://www.microsoft.com/en-us/translator/translatorapi.aspx">Microsft Translator API</a> to automatically detect and translate text in languages other than English. This program allowed the user to scan through each piece of music within the program in order to ensure correct parsing and to fix any music that was out of order. Ultimately, the program decreased the process from an average of 7.5 hours to 30-45 minutes.
+		</p>
         <hr class = "sectionSeparator">
     </div>
     <div id="connect"> 
         <h1>Connect</h1>
-        <div class = "content">
-            <a href="mailto:EricLeeSanders@gmail.com">
-                <img src="assets/imgs/email.png" alt="GitHub" height="48">
-            </a>
-            <a href="https://github.com/EricLeeSanders" onclick="trackOutboundLink('https://github.com/EricLeeSanders'); return false;">
-                <img src="assets/imgs/GitHub-Mark-Light-64px.png" alt="GitHub" height="48">
-            </a>
-            <a href="https://www.linkedin.com/in/EricLeeSanders" onclick="trackOutboundLink('https://www.linkedin.com/in/EricLeeSanders'); return false;">
-                <img src="assets/imgs/linkedin.png" alt="GitHub" height="48">
-            </a>
-        </div>
+        <div class="icons">
+			<a href="mailto:EricLeeSanders@gmail.com">
+				<img src="assets/imgs/email.png" alt="Email" height="64">
+			</a>
+			<a href="https://github.com/EricLeeSanders" onclick="trackOutboundLink('https://github.com/EricLeeSanders'); return false;">
+				<img src="assets/imgs/GitHub-Mark-64px.png" alt="GitHub" height="64">
+			</a>
+			<a href="https://www.linkedin.com/in/EricLeeSanders" onclick="trackOutboundLink('https://www.linkedin.com/in/EricLeeSanders'); return false;">
+				<img src="assets/imgs/linkedin.png" alt="Linkedin" height="64">
+			</a>
+		</div>
     </div>
     
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
-    <script type="text/javascript" src="assets/portfolio.js"></script>
+	<script type="text/javascript" src="assets/js/Chart.js"></script>
+	<script type="text/javascript" src="assets/js/owl.carousel.js"></script>
+	<script type="text/javascript" src="assets/js/timeline.js"></script>
+    <script type="text/javascript" src="assets/js/portfolio.js"></script>
 </body>
 </html>
