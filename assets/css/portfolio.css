@@ -165,8 +165,8 @@ a[href="#home"] {
 
 #home-content{
     position: relative;
-    top: 45%;
-    transform: translateY(-55%);
+    top: 40%;
+    transform: translateY(-60%);
 }
 
 .sectionSeparator{
