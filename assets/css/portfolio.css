@@ -4,8 +4,8 @@ canvas {
         -ms-user-select: none;
 }
 h1{
-	font-size: 3.5em;
-	text-align: center;
+    font-size: 3.5em;
+    text-align: center;
     text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
              0px 8px 13px rgba(0,0,0,0.1),
              0px 18px 23px rgba(0,0,0,0.1);
@@ -84,7 +84,7 @@ input[type=checkbox]:checked ~ #menu-hr{
 }
 
 header a {
-	color: #FFF;
+    color: #FFF;
 }
 
 #menu {
@@ -127,11 +127,11 @@ header a {
 }
 
 #home-navbar a[href] {
-	color: #303e49;
+    color: #303e49;
 }
 
 #main-navbar a[href] {
-	color: #fff;
+    color: #fff;
 }
 
 a[href="#home"] {
@@ -199,45 +199,45 @@ a[href="#home"] {
 Projects
 */
 .owl-carousel {
-	-webkit-box-shadow: 0 6px 12px rgba(0,0,0,1);
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,1);
     box-shadow: 0 6px 12px rgba(0,0,0,1);
     -moz-box-shadow: 0 6px 12px rgba(0,0,0,1);
-	max-width: 800px;
-	margin: auto;
+    max-width: 800px;
+    margin: auto;
 }
 
 .owl-carousel .project {
-	font-size: 0;
-	margin: 0 auto;
-	position: relative;	
-	width:100%;
-	height: 410px;
-	
+    font-size: 0;
+    margin: 0 auto;
+    position: relative; 
+    width:100%;
+    height: 410px;
+    
 }
 .owl-theme .owl-nav .owl-next {
-	right: -8%; 
+    right: -8%; 
 }
 .owl-theme .owl-nav .owl-prev {
-	left: -8%;
+    left: -8%;
 }
   .owl-theme .owl-nav [class*='owl-'] {
-	position: absolute;
-	top: 45%;
-	font-size: 30px;
+    position: absolute;
+    top: 45%;
+    font-size: 30px;
 }
 
 .project-picture {
-	width: 50%;
-	display: inline-block;
-	height: 100%;
+    width: 50%;
+    display: inline-block;
+    height: 100%;
     position: relative;
-	
+    
 }
 
 .project-picture img {
-	max-width: 300px !important;
+    max-width: 300px !important;
     max-height: 300px !important;
-	position: absolute;
+    position: absolute;
     margin: auto;
     top: 0;
     bottom: 0;
@@ -259,15 +259,15 @@ Projects
 }
 
 .project-description {
-	width: 50%;
-	height: 100%;
-	display: inline-block;
-	font-size: 1rem;
-	position: absolute;
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    font-size: 1rem;
+    position: absolute;
     padding-top: 50px;
 }
 
-	
+    
 .project-description  img{
     height: 32px !important;
     width: 32px !important;
@@ -276,7 +276,7 @@ Projects
 }
 
 .project-description p {
-	padding-right: 15px;
+    padding-right: 15px;
 }
 
 
@@ -293,14 +293,14 @@ Projects
 } 
 
 #canvas-holder {
-	max-width: 1200px;
-	display: flex;
-	justify-content: space-between;
-	margin: 0 auto 45px auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 45px auto;
 }
 
 .doughnut-chart {
-	display: inline-block;
+    display: inline-block;
 }
 
 .doughnut-chart canvas {
@@ -311,42 +311,42 @@ Projects
 }
 
 .skill-chart-description {
-	text-align: center;
+    text-align: center;
     font-size: 1.25em;
 }
 
 .hidden-content {
-	overflow: hidden;
+    overflow: hidden;
 }
 
 .hidden-content.hide-content {
-	max-height: 0;
-	-webkit-transition: max-height .3s ease;
+    max-height: 0;
+    -webkit-transition: max-height .3s ease;
     -moz-transition: max-height .3s ease;
     -ms-transition: max-height .3s ease;
-	transition: max-height .3s ease;
+    transition: max-height .3s ease;
 }
 
 /* TODO add max-height for smaller screens"*/
 .hidden-content.show-content{
-	max-height: 400px;
-	-webkit-transition: max-height 1s ease-in;
+    max-height: 400px;
+    -webkit-transition: max-height 1s ease-in;
     -moz-transition: max-height 1s ease-in;
     -ms-transition: max-height 1s ease-in;
-	transition: max-height 1s ease-in;
+    transition: max-height 1s ease-in;
 }
 
 .hidden-content ul {
-	margin: 0;
+    margin: 0;
 }
 
 .show-more {
-	margin-top: 30px;
-	text-align: center;
+    margin-top: 30px;
+    text-align: center;
 }
 
 .show-more span{
-	cursor: pointer;
+    cursor: pointer;
     display: block;
     margin: 0 auto;
     width: 35px;
@@ -361,8 +361,8 @@ Projects
     animation: pulsate 1.5s ease;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
-    padding-top: 8px;	
-	color: #FF6384;
+    padding-top: 8px;   
+    color: #FF6384;
 }
 
 #connect {
@@ -429,57 +429,57 @@ and (max-width: 968px) {
     #home-navbar {
         display:none;
     }
-	
-	.project-picture {
-		display: none;
-	}
-	
-	.project-description {
-		text-align: center;
-		display: block;
-		width: 100%;
-	}
-	
-	.project-description  img{
-		float: left;
-		top: 0;
-		margin: 10px;
-		position: absolute;
-		display: block !important;
-	}
-	
-	.project-description  p{
-		padding: 0 5%;
-		text-align: left;
-	}
-	
-	.owl-theme .owl-nav [class*='owl-'] {
-		position: relative;
-		font-size: 20px;
-	}	
+    
+    .project-picture {
+        display: none;
+    }
+    
+    .project-description {
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+    
+    .project-description  img{
+        float: left;
+        top: 0;
+        margin: 10px;
+        position: absolute;
+        display: block !important;
+    }
+    
+    .project-description  p{
+        padding: 0 5%;
+        text-align: left;
+    }
+    
+    .owl-theme .owl-nav [class*='owl-'] {
+        position: relative;
+        font-size: 20px;
+    }   
 }
 
 @media only screen
 and (max-width: 1050px) {
-	
-	#canvas-holder {
-		display: block;
-	}
-	.doughnut-chart {
-		display: block;
-		text-align: center;
-		width: 250px;
-		height: 250px;
-		margin: auto;
-		margin-bottom: 50px;
-	}
-	
-	.doughnut-chart canvas {
-		display: inline-block !important;
+    
+    #canvas-holder {
+        display: block;
+    }
+    .doughnut-chart {
+        display: block;
+        text-align: center;
         width: 250px;
         height: 250px;
-		
-	}
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    
+    .doughnut-chart canvas {
+        display: inline-block !important;
+        width: 250px;
+        height: 250px;
+        
+    }
 }
 
 @media only screen
@@ -492,19 +492,19 @@ and (max-width : 425px){
     #marimba {
         width: 125px;
     }
-	
-	.cd-timeline-content {
-		font-size: .90em;
-	}
-	
-	.doughnut-chart {
-		width: 150px;
-		height: 150px;
-	}
-	.doughnut-chart canvas {
+    
+    .cd-timeline-content {
+        font-size: .90em;
+    }
+    
+    .doughnut-chart {
         width: 150px;
         height: 150px;
-	}
+    }
+    .doughnut-chart canvas {
+        width: 150px;
+        height: 150px;
+    }
 
 }
 
