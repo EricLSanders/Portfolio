@@ -17,7 +17,7 @@ html {
 
 body {
     background: #e9f0f5;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Zilla Slab', serif;
     color: #303e49;
     margin: auto 5%;
     height: 100%;
@@ -34,6 +34,10 @@ a img {
 a,
 a:visited {
     color: #303e49;
+}
+
+.center-content {
+    text-align: center
 }
 
 
@@ -523,3 +527,4 @@ Projects
         transform: scale(1, 1)
     }
 }
+
