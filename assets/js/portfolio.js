@@ -71,7 +71,7 @@
          /* 
           * Show more button is clicked
           */
-         $('.show-more span').on('click', function() {
+         $('.show-more span').on('click', function(event) {
              var $this = $(this);
              var $content = $this.parent().prev('.hidden-content');
              $content.toggleClass('hide-content show-content');
@@ -162,3 +162,4 @@
          });
      });
  }(jQuery));
+
