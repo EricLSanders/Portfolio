@@ -112,9 +112,11 @@ header a {
 }
 
 #home-navbar {
-    position: relative;
-    top: 65%;
-    transform: translateY(-35%);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 80%;
+    transform: translateY(-20%);
 }
 
 #home-navbar li,
@@ -170,12 +172,15 @@ a[href="#home"] {
 }
 
 #home {
+    position: relative;
     text-align: center;
     height: 100%;
 }
 
 #home-content {
-    position: relative;
+    position: absolute;
+    left: 0;
+    right: 0;
     top: 40%;
     transform: translateY(-60%);
 }
@@ -305,7 +310,13 @@ Projects
 
 #canvas-holder {
     max-width: 1200px;
+    display: -webkit-flex;
     display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: space-between;
+    align-items: space-between;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
     margin: 0 auto 45px auto;
 }
@@ -383,7 +394,13 @@ Projects
 
 #connect .icons {
     max-width: 500px;
+    display: -webkit-flex;
     display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: space-between;
+    align-items: space-between;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
     margin: 0 auto 45px auto;
 }
