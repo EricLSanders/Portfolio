@@ -116,6 +116,8 @@ header a {
     left: 0;
     right: 0;
     top: 80%;
+    -ms-transform: translateY(-20%);
+    -webkit-transform: translateY(-20%);
     transform: translateY(-20%);
 }
 
@@ -182,6 +184,8 @@ a[href="#home"] {
     left: 0;
     right: 0;
     top: 40%;
+    -ms-transform: translateY(-60%);
+    -webkit-transform: translateY(-60%);
     transform: translateY(-60%);
 }
 
