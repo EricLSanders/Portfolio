@@ -19,8 +19,8 @@
          var doughnutData1 = {
              datasets: [{
                  data: [
-                     80,
-                     20
+                     90,
+                     10
                  ],
                  backgroundColor: [
                      '#FF6384',
@@ -32,8 +32,8 @@
          var doughnutData2 = {
              datasets: [{
                  data: [
-                     60,
-                     40
+                     75,
+                     25
                  ],
                  backgroundColor: [
                      'rgb(255, 99, 132)',
@@ -45,8 +45,8 @@
          var doughnutData3 = {
              datasets: [{
                  data: [
-                     40,
-                     60
+                     60,
+                     40
                  ],
                  backgroundColor: [
                      'rgb(255, 99, 132)',

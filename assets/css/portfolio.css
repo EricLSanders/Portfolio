@@ -325,6 +325,11 @@ Projects
     margin: 0 auto 45px auto;
 }
 
+.cd-timeline-content li,
+.cd-timeline-content li>ul {
+    margin: 0 0 3px 0;
+}
+
 .doughnut-chart {
     display: inline-block;
 }
